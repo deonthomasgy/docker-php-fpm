@@ -8,6 +8,7 @@ This Container includes the following extensions:
   - pdo_mysql
   - bcmath
   - gd
+  - imagick
 # Installation
 The following command will pull the latest php-fpm build.
 ```sh
