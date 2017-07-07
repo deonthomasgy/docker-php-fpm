@@ -9,6 +9,7 @@ This Container includes the following extensions:
   - bcmath
   - gd
   - imagick
+  - exif
 # Installation
 The following command will pull the latest php-fpm build.
 ```sh
