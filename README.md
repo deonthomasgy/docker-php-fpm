@@ -10,6 +10,11 @@ This Container includes the following extensions:
   - gd
   - imagick
   - exif
+  - xdebug
+
+This Container includes the following programs:
+  - composer
+
 # Installation
 The following command will pull the latest php-fpm build.
 ```sh
