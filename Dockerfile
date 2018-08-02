@@ -1,4 +1,4 @@
-FROM php:5.6-fpm
+FROM php:5.6-fpm-stretch
 
 MAINTAINER Deon Thomas "Deon.Thomas.GY@gmail.com"
 
@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
-        libpng12-dev \
+        libpng-dev \
         libmagickwand-6.q16-dev \
         ca-certificates \
     && ln -s /usr/lib/x86_64-linux-gnu/ImageMagick-6.8.9/bin-Q16/MagickWand-config /usr/bin \
