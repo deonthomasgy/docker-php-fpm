@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
         libmcrypt-dev \
         libpng-dev \
         libmagickwand-6.q16-dev \
+        libtidy-dev \
         ca-certificates \
     && ln -s /usr/lib/x86_64-linux-gnu/ImageMagick-6.8.9/bin-Q16/MagickWand-config /usr/bin \
     && pecl install imagick xdebug-2.5.5 \
@@ -17,6 +18,6 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install iconv mcrypt pdo_mysql bcmath exif \
     && docker-php-ext-enable xdebug \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-    && docker-php-ext-install gd zip \
+    && docker-php-ext-install gd zip tidy \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
 CMD ["php-fpm"]

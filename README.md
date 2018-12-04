@@ -11,6 +11,7 @@ This Container includes the following extensions:
   - imagick
   - exif
   - xdebug
+  - tidy
 
 This Container includes the following programs:
   - composer
