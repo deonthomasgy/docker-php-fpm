@@ -12,6 +12,7 @@ This Container includes the following extensions:
   - exif
   - xdebug
   - tidy
+  - mysqli
 
 This Container includes the following programs:
   - composer
